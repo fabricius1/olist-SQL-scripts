@@ -31,7 +31,7 @@ IF NOT EXISTS (SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'olist
 GO
 
 BULK INSERT [olist].[geolocation]
-FROM 'D:\myCourses\stack_academy\azure_engenheiro_de_dados\database_olist\geolocation.csv'
+FROM 'C:\<FILE_ABSOLUTE_PATH>\geolocation.csv'
 WITH (
 FORMAT = 'CSV'
     ,FIRSTROW = 2
@@ -57,7 +57,7 @@ IF NOT EXISTS (SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'olist
 GO
 
 BULK INSERT [olist].[sellers]
-FROM 'D:\myCourses\stack_academy\azure_engenheiro_de_dados\database_olist\sellers.csv'
+FROM 'C:\<FILE_ABSOLUTE_PATH>\sellers.csv'
 WITH (
     FORMAT = 'CSV'
     ,FIRSTROW = 2
@@ -87,7 +87,7 @@ IF NOT EXISTS (SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'olist
 GO
 
 BULK INSERT [olist].[products]
-FROM 'D:\myCourses\stack_academy\azure_engenheiro_de_dados\database_olist\products.csv'
+FROM 'C:\<FILE_ABSOLUTE_PATH>\products.csv'
 WITH (
 FORMAT = 'CSV'
     ,FIRSTROW = 2
@@ -113,7 +113,7 @@ IF NOT EXISTS (SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'olist
 GO
 
 BULK INSERT [olist].[customers]
-FROM 'D:\myCourses\stack_academy\azure_engenheiro_de_dados\database_olist\customers.csv'
+FROM 'C:\<FILE_ABSOLUTE_PATH>\customers.csv'
 WITH (
     FORMAT = 'CSV'
     ,FIRSTROW = 2
@@ -146,7 +146,7 @@ IF NOT EXISTS (SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'olist
 GO
 
 BULK INSERT [olist].[orders]
-FROM 'D:\myCourses\stack_academy\azure_engenheiro_de_dados\database_olist\orders.csv'
+FROM 'C:\<FILE_ABSOLUTE_PATH>\orders.csv'
 WITH (
     FORMAT = 'CSV'
     ,FIRSTROW = 2
@@ -184,7 +184,7 @@ IF NOT EXISTS (SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'olist
 GO
 
 BULK INSERT [olist].[order_items]
-FROM 'D:\myCourses\stack_academy\azure_engenheiro_de_dados\database_olist\order_items.csv'
+FROM 'C:\<FILE_ABSOLUTE_PATH>\order_items.csv'
 WITH (
     FORMAT = 'CSV'
     ,FIRSTROW = 2
@@ -210,7 +210,7 @@ IF NOT EXISTS (SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'olist
 GO
 
 BULK INSERT [olist].[order_payments]
-FROM 'D:\myCourses\stack_academy\azure_engenheiro_de_dados\database_olist\order_payments.csv'
+FROM 'C:\<FILE_ABSOLUTE_PATH>\order_payments.csv'
 WITH (
     FORMAT = 'CSV'
     ,FIRSTROW = 2
@@ -238,7 +238,7 @@ IF NOT EXISTS (SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'olist
 GO
 
 BULK INSERT [olist].[order_reviews]
-FROM 'D:\myCourses\stack_academy\azure_engenheiro_de_dados\database_olist\order_reviews.csv'
+FROM 'C:\<FILE_ABSOLUTE_PATH>\order_reviews.csv'
 WITH (
     FORMAT = 'CSV'
     ,FIRSTROW = 2
@@ -260,7 +260,7 @@ IF NOT EXISTS (SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'olist
 GO
 
 BULK INSERT [olist].[product_category_name_translation]
-FROM 'D:\myCourses\stack_academy\azure_engenheiro_de_dados\database_olist\product_category_name_translation.csv'
+FROM 'C:\<FILE_ABSOLUTE_PATH>\product_category_name_translation.csv'
 WITH (
     FORMAT = 'CSV'
     ,FIRSTROW = 2
