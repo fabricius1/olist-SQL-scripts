@@ -1,13 +1,6 @@
--- SHOW ALL TABLES IN THE DATABASE:
--- SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE='BASE TABLE'
-
--- SHOW DATA TYPES AND OTHER INFO FROM A TABLE:
--- EXEC sp_help 'olist.customers';
-
 USE master
 GO
 
--- Database and schema creation
 DROP DATABASE IF EXISTS olistdb
 GO
 
@@ -23,7 +16,6 @@ GO
 CREATE SCHEMA olist
 GO
 
---##########--
 IF EXISTS(SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'olist' AND name like 'geolocation')  
     DROP TABLE [olist].[geolocation];  
 GO
@@ -49,7 +41,6 @@ FORMAT = 'CSV'
     )
 GO
 
---##########--
 IF EXISTS(SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'olist' AND name like 'sellers')  
     DROP TABLE [olist].[sellers];  
 GO
@@ -76,7 +67,6 @@ WITH (
 )
 GO
 
---##########--
 IF EXISTS(SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'olist' AND name like 'products')  
     DROP TABLE [olist].[products];  
 GO
@@ -107,7 +97,6 @@ FORMAT = 'CSV'
     )
 GO
 
---##########--
 IF EXISTS(SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'olist' AND name like 'customers')  
     DROP TABLE [olist].[customers];  
 GO
@@ -134,7 +123,6 @@ WITH (
 )
 GO
 
---##########--
 IF EXISTS(SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'olist' AND name like 'orders')  
     DROP TABLE [olist].[orders];  
 GO
@@ -168,7 +156,6 @@ WITH (
 )
 GO
 
---##########--
 IF EXISTS(SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'olist' AND name like 'order_items')  
     DROP TABLE [olist].[order_items];  
 GO
@@ -207,7 +194,6 @@ WITH (
 )
 GO
 
---##########--
 IF EXISTS(SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'olist' AND name like 'order_payments')  
     DROP TABLE [olist].[order_payments]; 
 GO
@@ -234,7 +220,6 @@ WITH (
 )
 GO
 
---##########--
 IF EXISTS(SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'olist' AND name like 'order_reviews')  
     DROP TABLE [olist].[order_reviews];  
 GO
@@ -263,7 +248,6 @@ WITH (
 )
 GO
 
---##########--
 IF EXISTS(SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'olist' AND name like 'product_category_name_translation')  
     DROP TABLE [olist].[product_category_name_translation];  
 GO
