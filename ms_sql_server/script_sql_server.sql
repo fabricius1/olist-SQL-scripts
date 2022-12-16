@@ -254,8 +254,8 @@ GO
 
 IF NOT EXISTS (SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'olist' AND name like 'product_category_name_translation')
     CREATE TABLE [olist].[product_category_name_translation] (
-        product_category_name VARCHAR(50),
-        product_category_name_english VARCHAR(70)
+        product_category_name VARCHAR(50)
+        ,product_category_name_english VARCHAR(70)
     )
 GO
 

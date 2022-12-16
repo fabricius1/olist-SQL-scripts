@@ -1,0 +1,19 @@
+.read ./script_sqlite3.sql
+
+.mode csv
+
+.import --skip 1 <PATH/TO/CSV/FILES>/geolocation.csv geolocation
+.import --skip 1 <PATH/TO/CSV/FILES>/sellers.csv sellers
+.import --skip 1 <PATH/TO/CSV/FILES>/products.csv products
+.import --skip 1 <PATH/TO/CSV/FILES>/customers.csv customers
+.import --skip 1 <PATH/TO/CSV/FILES>/orders.csv orders
+.import --skip 1 <PATH/TO/CSV/FILES>/order_items.csv order_items
+.import --skip 1 <PATH/TO/CSV/FILES>/order_payments.csv order_payments
+.import --skip 1 <PATH/TO/CSV/FILES>/order_reviews.csv order_reviews
+.import --skip 1 <PATH/TO/CSV/FILES>/product_category_name_translation.csv product_category_name_translation
+
+.mode table
+
+SELECT 'GEOLOCATION (first 5 rows below)' AS 'table', COUNT(1) AS 'total rows' FROM geolocation;
+
+SELECT * FROM geolocation LIMIT 5;
