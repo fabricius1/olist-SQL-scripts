@@ -1,25 +1,35 @@
-<h1 align="center">SQL SCRIPTS AND FILES TO CREATE THE OLIST DATABASE ON MYSQL, SQLITE3, AND MICROSOFT SQL SERVER</h1>
+<h1 align="center">CREATE THE OLIST DATABASE ON SQLITE3, MICROSOFT SQL SERVER, AND MYSQL</h1>
 
 <br />
 
 ## Table of contents
 
 1. [Project description](#project-description)
-2. [MySQL implementation](#olist-database-on-mysql)
-3. [Sqlite3 implementation](#olist-database-on-sqlite3)
-4. [Microsoft SQL Server implementation](#olist-database-on-sql-server)
+2. [Sqlite3 implementation](#olist-database-on-sqlite3)
+3. [Microsoft SQL Server implementation](#olist-database-on-sql-server)
+4. [MySQL implementation](#olist-database-on-mysql)
 
 ## Project description
 
-The Olist dataset is available on [this Kaggle page](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) as a group of nine csv files. With more than 1.7 million rows, this data from a Brazilian e-commerce company can be used for many different projects, including learning and practicing SQL coding skills.
+The Olist dataset is available on [this Kaggle page](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) as a group of nine csv files. With more than 1.7 million rows, this data from the Brazilian e-commerce company Olist can be used for many different projects, including learning and practicing SQL coding skills.
 
-This repository aims to provide files and scripts that will make possible to load the Olist dataset on some of the most used Database Management Systems (DBMS): MySQL, Sqlite3, and Microsoft SQL Server. One will find below instructions for each one of these option.
+This GitHub repository aims to provide files and scripts that will make possible to load the Olist dataset on some of the most used Database Management Systems (DBMS): Sqlite3, Microsoft SQL Server, and MySQL. One will find instructions below for each one of these option.
 
-So, make your choice and let's start running SQL queries locally on the Olist database!
+So, make your choice and let's start running SQL queries locally on the Olist database.
+
+## Olist database on Sqlite3
+
+> Having sqlite3 installed locally, unzip the [olist_sqlite3_database.zip](./sqlite3/olist_sqlite3_database.zip) file and connect to the `olist.db` database file using the command `sqlite3 olist.db`. 
+
+## Olist database on SQL Server
+
+> Use the Microsoft SSMS (SQL Server Management Studio) software to restore the `olistdb.bak` file, which can be extracted from [olistdb_bak_file.zip](./ms_sql_server/olistdb_bak_file.zip).
+
+[Follow this tutorial](https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/quickstart-backup-restore-database?view=sql-server-ver16#restore-a-backup) on how to restore a Microsoft SQL Server database from a `.bak` file using SSMS.
 
 ## Olist database on MySQL 
 
-> You will need to have MySQL installed on your machine, with a user with CREATE privileges.
+> You will need to have MySQL installed on your machine, with a user with `CREATE` privileges.
 > On the terminal, run the commands below:
 
 ```shell
@@ -39,13 +49,5 @@ sudo mysql -u root -p olistdb < mysql_dump_script.sql
 
 # now, login again on mysql and run some queries
 sudo mysql -u root -p olistdb
-.mode table
 SELECT * FROM sellers LIMIT 10;
 ```
-
-## Olist database on sqlite3
-
-## Olist database on SQL Server
-
-
-
