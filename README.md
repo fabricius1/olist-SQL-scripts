@@ -25,7 +25,7 @@ So, make your choice and let's start running SQL queries locally on the Olist da
 
 > Use the Microsoft SSMS (SQL Server Management Studio) software to restore the `olistdb.bak` file, which can be extracted from [olistdb_bak_file.zip](./ms_sql_server/olistdb_bak_file.zip).
 
-[Follow this tutorial](https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/quickstart-backup-restore-database?view=sql-server-ver16#restore-a-backup) on how to restore a Microsoft SQL Server database from a `.bak` file using SSMS.
+> [Follow this tutorial](https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/quickstart-backup-restore-database?view=sql-server-ver16#restore-a-backup) on how to restore a Microsoft SQL Server database from a `.bak` file using SSMS.
 
 ## Olist database on MySQL 
 
@@ -33,10 +33,10 @@ So, make your choice and let's start running SQL queries locally on the Olist da
 > On the terminal, run the commands below:
 
 ```shell
-# save locally the mysql/mysql_dump_script.zip file and unzip it
+# save locally the ./mysql/mysql_dump_script.zip file and unzip it
 unzip mysql_dump_script.zip
 
-# login on MySQL shell. Change the "root" user for yours, if necessary
+# login on MySQL shell. Change the root user for one of yours, if necessary
 sudo mysql -u root -p
 
 # on the MySQL interactive shell, run the following commands:
