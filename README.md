@@ -1,13 +1,14 @@
-<h1 align="center">CREATE THE OLIST DATABASE ON SQLITE3, MICROSOFT SQL SERVER, AND MYSQL</h1>
+<h1 align="center">CREATE THE OLIST DATABASE ON DATABRICKS, SQLITE3, MICROSOFT SQL SERVER, AND MYSQL</h1>
 
 <br />
 
 ## Table of contents
 
 1. [Project description](#project-description)
-2. [Sqlite3 implementation](#olist-database-on-sqlite3)
-3. [Microsoft SQL Server implementation](#olist-database-on-sql-server)
-4. [MySQL implementation](#olist-database-on-mysql)
+2. [Databricks implementation](#olist-database-on-databricks)
+3. [Sqlite3 implementation](#olist-database-on-sqlite3)
+4. [Microsoft SQL Server implementation](#olist-database-on-sql-server)
+5. [MySQL implementation](#olist-database-on-mysql)
 
 ## Project description
 
@@ -16,6 +17,10 @@ The Olist dataset is available on [this Kaggle page](https://www.kaggle.com/data
 This GitHub repository aims to provide files and scripts that will make possible to load the Olist dataset on some of the most used Database Management Systems (DBMS): Sqlite3, Microsoft SQL Server, and MySQL. One will find instructions below for each one of these option.
 
 So, make your choice and let's start running SQL queries locally on the Olist database.
+
+## Olist database on Databricks
+
+Import the file `databricks_olist.dbc` to your Databricks Workspace. Then, open the `olist_database` notebook and run its first cell. After the cell finishes running, the olist tables should all be created in the `default` database.
 
 ## Olist database on Sqlite3
 
