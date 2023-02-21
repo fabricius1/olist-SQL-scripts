@@ -20,7 +20,7 @@ So, make your choice and let's start running SQL queries locally on the Olist da
 
 ## Olist database on Databricks
 
-Import the file `databricks_olist.dbc` to your Databricks Workspace. Then, open the `olist_database` notebook and run its first cell. After the cell finishes running, the olist tables should all be created in the `default` database.
+Import the `databricks_olist.dbc` file  to your Databricks Workspace. Then, open the notebook and run its first cell. After the cell finishes running, the olist tables should all be created in the `default` database.
 
 ## Olist database on Sqlite3
 
